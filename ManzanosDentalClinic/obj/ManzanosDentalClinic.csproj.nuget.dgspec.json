@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gonza\\source\\repos\\ManzanosDentalClinic\\ManzanosDentalClinic\\ManzanosDentalClinic.csproj": {}
+    "C:\\Users\\gonza\\source\\repos\\DentalClinicRepo\\ManzanosDentalClinic\\ManzanosDentalClinic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gonza\\source\\repos\\ManzanosDentalClinic\\ManzanosDentalClinic\\ManzanosDentalClinic.csproj": {
+    "C:\\Users\\gonza\\source\\repos\\DentalClinicRepo\\ManzanosDentalClinic\\ManzanosDentalClinic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gonza\\source\\repos\\ManzanosDentalClinic\\ManzanosDentalClinic\\ManzanosDentalClinic.csproj",
+        "projectUniqueName": "C:\\Users\\gonza\\source\\repos\\DentalClinicRepo\\ManzanosDentalClinic\\ManzanosDentalClinic.csproj",
         "projectName": "ManzanosDentalClinic",
-        "projectPath": "C:\\Users\\gonza\\source\\repos\\ManzanosDentalClinic\\ManzanosDentalClinic\\ManzanosDentalClinic.csproj",
+        "projectPath": "C:\\Users\\gonza\\source\\repos\\DentalClinicRepo\\ManzanosDentalClinic\\ManzanosDentalClinic.csproj",
         "packagesPath": "C:\\Users\\gonza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gonza\\source\\repos\\ManzanosDentalClinic\\ManzanosDentalClinic\\obj\\",
+        "outputPath": "C:\\Users\\gonza\\source\\repos\\DentalClinicRepo\\ManzanosDentalClinic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -42,6 +42,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

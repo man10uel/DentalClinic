@@ -5,45 +5,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - ManzanosDentalClinic</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <!-- Style CSS -->
+    <link href="~/css/style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <!-- FontAwesome CSS -->
+    <link href="~/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="~/css/owl.theme.default.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="~/css/fontello.css">
+    <link href="~/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">ManzanosDentalClinic</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                    </ul>
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-12">
+                    <div class="call-info">
+                        <p class="call-text"><i class="fa fa-phone"></i><strong>(000)-123-4567</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-3 hidden-sm hidden-xs">
+                    <div class="call-info">
+                        <p class="call-text"><i class="fa fa-envelope-open-o"></i><strong>info@dentalcare.com</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-7 hidden-sm hidden-xs">
+                    <div class="social">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - ManzanosDentalClinic - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
-    </footer>
+    </div>
+    <div class="header-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12">
+                    <a href="index.html"><img src="images/logo.png" alt=""></a>
+                </div>
+                <div class="col-lg-9 col-md-10 col-sm-12 col-xs-12">
+                    <div class="navigation">
+                        <div id="navigation">
+                            <ul>
+                                <li class="active"><a href="index.html" title="Home">Home</a></li>
+                                <li><a href="index.html" title="Home">Equipo</a></li>
+                                <li><a href="index.html" title="Home">Tratamientos</a></li>
+                                <li><a href="index.html" title="Home">Testimonios</a></li>
+                                <li><a href="index.html" title="Home">Preguntas frecuentes</a></li>
+                                <li><a href="index.html" title="Home">Contacto</a></li>
+                                @*<li class="has-sub">
+                                    <a href="blog-default.html" title="Blog ">Blog</a>
+                                    <ul>
+                                        <li><a href="blog-default.html" title="Blog">Blog Default</a></li>
+                                        <li><a href="blog-single.html" title="Blog Single ">Blog Single</a></li>
+                                    </ul>
+                                </li>*@
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header-section close -->
+
+    @RenderBody()
+
+    <!-- footer start -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- footer-contactinfo-start -->
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="footer-widget">
+                        <div class="mb30"><img src="./images/logo.png" alt="" class="img-responsive"></div>
+                        <p>Ultricies enim act accumsan dolor nullam dapibus rhoncus vehicular sed consectetur interdum vulputate ullamcorper.</p>
+                        <a href="#" class="btn btn-default btn-sm">meet our team</a>
+                    </div>
+                </div>
+                <!-- footer-contactinfo-close -->
+                <!-- footer-useful links-start -->
+                <div class=" col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                    <div class="footer-widget">
+                        <h3 class="footer-title">Accesos rápidos</h3>
+                        <ul>
+                            <li><a href="#">Equipo </a></li>
+                            <li><a href="#">Tratamientos </a></li>
+                            <li><a href="#">Testimonios</a></li>
+                            <li><a href="#">Preguntas frecuentes </a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- footer-useful links-close -->
+                <!-- footer-location-start -->
+                <div class=" col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                    <div class="footer-widget">
+                        <h3 class="footer-title">Horario</h3>
+                        <div class="time-schedule">
+                            <p class="time-schedule-text text-white">Monday to Friday</p>
+                            <span>8.00 am - 5.00 pm</span>
+                        </div>
+                        <div class="time-schedule">
+                            <p class="time-schedule-text text-white">Saturday</p>
+                            <span>10.00 am - 5.00 pm</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer-locations-close -->
+                <!-- footer-about-start -->
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                    <div class="footer-widget">
+                        <h3 class="footer-title">Info. contacto</h3>
+                        <div class="">
+                            <ul>
+                                <li> <i class="fa fa-map-marker"></i>34 Zackwon 15th St, NY 10011</li>
+                                <li><i class="fa fa-phone"></i>(000)-123-4567</li>
+                                <li><i class="fa fa-envelope-open"></i>info@dentalcare.com</li>
+                            </ul>
+                        </div>
+                        <div class="footer-social"> <a href="#"><span><i class="fa fa-facebook"></i></span></a> <a href="#"><span><i class="fa fa-google-plus"></i></span> </a> <a href="#"><span class="active"><i class="fa fa-twitter"></i> </span></a> <a href="#"><span><i class=" fa fa-pinterest"></i> </span></a> <a href="#"><span><i class="fa fa-linkedin"></i></span></a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tiny-footer-start -->
+    <div class="tiny-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">Clínica dental Manzano © 2020 All Rights Reserved.</div>
+            </div>
+            <!-- tiny-footer-start -->
+        </div>
+    </div>
+    <!-- footer-address-close -->
+    <!-- footer close -->
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->    
+    <script src="~/js/navigation.js" type="text/javascript"></script>
+    <script src="~/js/menumaker.js" type="text/javascript"></script>
+    <script type="text/javascript" src="~/lib/jquery/dist/jquery.sticky.js"></script>
+    <script type="text/javascript" src="~/js/sticky-header.js"></script>
+    <script type="text/javascript" src="~/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="~/js/slider.js"></script>
+    <script type="text/javascript" src="~/js/testimonial-slider.js"></script>
 
     @RenderSection("Scripts", required: false)
 </body>
